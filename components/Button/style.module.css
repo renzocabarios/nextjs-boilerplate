@@ -1,0 +1,15 @@
+.button {
+  @apply rounded-md px-2 py-1;
+}
+
+.filled {
+  @apply bg-secondary-500 text-white-500;
+}
+
+.outlined {
+  @apply bg-transparent text-secondary-500 border-secondary-500 border rounded-md px-2 py-1;
+}
+
+.light {
+  @apply bg-transparent text-white-50 border-white-50 border rounded-md px-2 py-1 !important;
+}
