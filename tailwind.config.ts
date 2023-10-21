@@ -1,20 +1,77 @@
-import type { Config } from 'tailwindcss'
+import type { Config } from "tailwindcss";
 
 const config: Config = {
   content: [
-    './pages/**/*.{js,ts,jsx,tsx,mdx}',
-    './components/**/*.{js,ts,jsx,tsx,mdx}',
-    './app/**/*.{js,ts,jsx,tsx,mdx}',
+    "./pages/**/*.{js,ts,jsx,tsx,mdx}",
+    "./components/**/*.{js,ts,jsx,tsx,mdx}",
+    "./app/**/*.{js,ts,jsx,tsx,mdx}",
   ],
   theme: {
     extend: {
-      backgroundImage: {
-        'gradient-radial': 'radial-gradient(var(--tw-gradient-stops))',
-        'gradient-conic':
-          'conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))',
+      fontSize: {
+        xs: "0.5625rem",
+        sm: "0.6875rem",
+        md: "1rem",
+        xl: "1.1875rem",
+        h6: "1.375rem",
+        h5: "1.6875rem",
+        h4: "2.125rem",
+        h3: "2.6875rem",
+        h2: "3.3125rem",
+        h1: "4.1875rem",
+      },
+      colors: {
+        black: {
+          50: "rgba(231, 233, 234, 1)",
+          100: "rgba(222, 0, 0, 1)",
+          200: "rgba(206, 0, 0, 1)",
+          300: "rgba(184, 0, 0, 1)",
+          400: "rgba(170, 0, 0, 1)",
+          500: "rgba(18, 32, 47, 1)",
+          600: "rgba(0, 0, 0, 1)",
+          700: "rgba(0, 0, 0, 1)",
+          800: "rgba(10, 18, 26, 1)",
+          900: "rgba(0, 0, 0, 1)",
+        },
+        dark: {
+          50: "rgba(231, 233, 234, 1)",
+          100: "rgba(222, 0, 0, 1)",
+          200: "rgba(206, 0, 0, 1)",
+          300: "rgba(184, 0, 0, 1)",
+          400: "rgba(55, 63, 73, 1)",
+          500: "rgba(5, 15, 27, 1)",
+          600: "rgba(0, 0, 0, 1)",
+          700: "rgba(0, 0, 0, 1)",
+          800: "rgba(10, 18, 26, 1)",
+          900: "rgba(0, 0, 0, 1)",
+        },
+        secondary: {
+          50: "rgba(231, 233, 234, 1)",
+          100: "rgba(222, 0, 0, 1)",
+          200: "rgba(206, 0, 0, 1)",
+          300: "rgba(184, 0, 0, 1)",
+          400: "rgba(170, 0, 0, 1)",
+          500: "rgba(35, 105, 242, 1)",
+          600: "rgba(0, 0, 0, 1)",
+          700: "rgba(0, 0, 0, 1)",
+          800: "rgba(19, 58, 133, 1)",
+          900: "rgba(15, 44, 102, 1)",
+        },
+        white: {
+          50: "rgba(254, 254, 254, 1)",
+          100: "rgba(222, 0, 0, 1)",
+          200: "rgba(206, 0, 0, 1)",
+          300: "rgba(250, 250, 245, 1)",
+          400: "rgba(170, 0, 0, 1)",
+          500: "rgba(247, 248, 240, 1)",
+          600: "rgba(0, 0, 0, 1)",
+          700: "rgba(0, 0, 0, 1)",
+          800: "rgba(0, 0, 0, 1)",
+          900: "rgba(0, 0, 0, 1)",
+        },
       },
     },
   },
   plugins: [],
-}
-export default config
+};
+export default config;
